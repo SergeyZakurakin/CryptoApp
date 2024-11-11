@@ -18,13 +18,13 @@ struct ContentView: View {
                     .foregroundStyle(Color.theme.accent)
                 
                 Text("Secondary Text Color")
-                    .foregroundStyle(Color.theme.SecondaryText)
+                    .foregroundStyle(Color.theme.secondaryText)
                 
                 Text("Red Color")
-                    .foregroundStyle(Color.theme.Red)
+                    .foregroundStyle(Color.theme.specialRed)
                 
                 Text("Green Color")
-                    .foregroundStyle(Color.theme.Green)
+                    .foregroundStyle(Color.theme.specialGreen)
             }
             .font(.headline )
         }
