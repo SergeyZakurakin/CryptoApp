@@ -18,7 +18,6 @@ struct CoinRowView: View {
             Spacer()
             if showHoldingsColumn {
                 centralColumn
-               
             }
             rightColumn
         }
@@ -35,9 +34,7 @@ struct CoinRowView: View {
     }
 }
 
-
 extension CoinRowView {
-    
     private var leftColumn: some View {
         HStack(spacing: 0) {
             Text("\(coin.rank)")
@@ -50,7 +47,6 @@ extension CoinRowView {
                 .font(.headline)
                 .padding(.leading, 6)
                 .foregroundStyle(.accent)
-            
         }
     }
     
@@ -64,7 +60,6 @@ extension CoinRowView {
     }
     
     private var rightColumn: some View {
-        
         VStack(alignment: .trailing) {
             Text(coin.currentPrice.asCurrencyWith2Decimals())
                 .bold()

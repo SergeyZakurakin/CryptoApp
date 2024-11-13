@@ -18,7 +18,10 @@ extension Preview {
 class DeveloperPreview {
     
     static let shared = DeveloperPreview()
-    private init() {}
+    private init() { }
+    
+    let homeVm = HomeView()
+    
     
     let coin = CoinModel(
         id: "bitcoin",
