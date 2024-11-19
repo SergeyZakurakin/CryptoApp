@@ -35,9 +35,5 @@ class CoinDataService {
                 // cancel get request after once
                 coinSubscription?.cancel()
             })
- 
-           
-
-        
     }
 }
