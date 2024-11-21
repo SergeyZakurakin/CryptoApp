@@ -42,6 +42,11 @@ struct PortfolioView: View {
                     trailingNavBarButton
                 }
             }
+            .onChange(of: vm.searchText) { value in
+                if value == "" {
+                    removeSelectedCoin()
+                }
+            }
         }
     }
     private func currentValue() -> Double {
@@ -148,6 +153,8 @@ extension PortfolioView {
         selectedCoin = nil
         vm.searchText = ""
     }
+    
+    
     
 
 
